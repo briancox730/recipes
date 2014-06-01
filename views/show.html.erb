@@ -1,0 +1,13 @@
+<h1><%= @recipe_details[0]["name"] %></h1>
+<h2>Lets get started</h2>
+<p class="lead"><%= @recipe_details[0]["desc"] %></p>
+<h3>The things you will need!<h3>
+<ul>
+  <% @recipe_details.each do |ingredient| %>
+    <li>
+      <%= ingredient["ingredient"] %>
+    </li>
+  <% end %>
+</ul>
+<h3>Instructions</h3>
+<p class="lead"><%= @recipe_details[0]["instructions"] %></p>

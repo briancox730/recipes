@@ -1,0 +1,10 @@
+<h1><%= @title %></h1>
+<ul class="list-unstyled">
+  <% @recipes.each do |recipe| %>
+    <li>
+      <a href="/recipes/<%= recipe["id"] %>">
+        <%= recipe["name"] %>
+      </a>
+    </li>
+  <% end %>
+<ul>
